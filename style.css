@@ -1,0 +1,10 @@
+:root {
+    --color-1: ##81F1B2;
+    --color-2: #ffffff;
+    --color-3: #e5f1f6;
+    --color-4: #7dc9e7;
+  }
+  
+  body {
+    background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);
+  }

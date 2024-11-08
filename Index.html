@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker Game Deluxe</title>
+    <style>
+        #cookie {
+            height: 200px;
+            width: 200px;
+            background: url('https://www.simplyjillicious.com/wp-content/uploads/2023/09/healthy-single-serve-cookie-recipe-6-1920x2880.jpg') no-repeat center center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #shop, #achievements {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <div id="cookie"></div>
+        <p>Cookies: <span id="points">0</span></p>
+        
+        <!-- Shop for Upgrades -->
+        <div id="shop">
+            <button onclick="buyUpgrade('cursor', 10, 1)">Buy Cursor (10 cookies) - 1 cookie per second</button>
+            <button onclick="buyUpgrade('grandma', 100, 10)">Buy Grandma (100 cookies) - 10 cookies per second</button>
+            <button onclick="buyUpgrade('factory', 1000, 100)">Buy Factory (1000 cookies) - 100 cookies per second</button>
+        </div>
+
+        <!-- Achievements Section -->
+        <div id="achievements">
+            <h3>Achievements</h3>
+            <ul id="achievementList">
+                <!-- Achievements will be dynamically added here -->
+            </ul>
+        </div>
+
+        <!-- Prestige System -->
+        <div id="prestige">
+            <button onclick="prestige()">Prestige - Reset for bonuses!</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
